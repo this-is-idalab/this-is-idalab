@@ -1,0 +1,152 @@
+/*     ****************** Fonts ****************************   */
+
+@font-face {
+  font-family: 'AkkLg_Pro';
+  src: url('../fonts/AkkLg_Pro.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/AkkLg_Pro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/AkkLg_Pro.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/AkkLg_Pro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/AkkLg_Pro.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+/*     ****************** Main Controllers *****************   */
+
+body {
+    font-family: 'AkkLg_Pro', Arial, Helvetica;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    height: 100%; 
+    background-color: #d4d1cd;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    outline: 0;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration:none;
+}
+
+h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*     ****************** Header **********************   */
+
+.logo {
+    margin: 60px auto 0;
+    background-image: url('../images/idalab_logo.png');
+    background-repeat: no-repeat;
+    background-size: 250px 361px;
+    width: 250px;
+    height: 361px;
+}
+
+header.impressum-page {
+    margin-bottom: 20px;
+}
+
+header.impressum-page .container {
+    border-bottom: 1px solid #000000;
+}
+
+header.impressum-page .logo {
+    margin: 20px auto;
+    background-size: 100px 144px;
+    width: 100px;
+    height: 144px;
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    .logo {
+        background-image: url('../images/idalab_logo@x2.png');
+    }
+}
+
+/*     ****************** Main Content **********************   */
+
+.services {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    padding: 20px 0;
+    max-width: 400px;
+    margin: 40px auto 20px;
+    text-align: center;
+}
+
+.address {
+    margin: 0 auto;
+    text-align: center;
+    font-size : 10px;
+}
+
+.address p {
+    margin-bottom: 0;
+}
+
+.address .contact {
+    margin-left: -2px;
+}
+
+.impressum {
+    margin: 40px auto 20px;
+    text-align: center;
+    font-size : 10px;
+}
+
+.impressum a {
+    text-decoration: underline;
+}
+
+/*     ****************** Impressum ****************************   */
+
+.impressum-text {
+    margin: 0 5%;
+    padding-bottom: 40px;
+}
+
+.impressum-text h2 {
+    margin-bottom: 40px;
+}
+
+footer.impressum-footer .container {
+    border-top: 1px solid #000000;
+    padding-top: 40px;
+}
+
+
+/***********************************************************************************************************************
+* Mobile Versions
+***********************************************************************************************************************/
+
+
+@media (max-width: 767px) {
+
+    .logo {
+        margin: 60px auto 0;
+        background-size: 150px 217px;
+        width: 150px;
+        height: 217px;
+    }
+
+}
+
+
+
+
+
+
+
