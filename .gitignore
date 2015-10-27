@@ -1,3 +1,8 @@
 *~
 .DS_Store
 *.pyc
+/.bundle/
+/.sass-cache/
+/_site/
+/_tmp/
+/Gemfile.lock
