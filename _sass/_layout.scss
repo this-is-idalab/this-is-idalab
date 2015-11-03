@@ -2,21 +2,27 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    border-bottom: 1px solid black;
+    height: 10em;
+    position: relative;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
+    display: block;
     font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
+    height: 90%;
     margin-bottom: 0;
-    float: left;
+    position: absolute;
+    width: 7em;
+
+    background:url(../images/idalab_logo.png);
+    background-repeat:no-repeat;
+    background-position: left top;
+    background-size: contain;
+
 
     &,
     &:visited {
@@ -93,12 +99,14 @@
 }
 
 
-
+.trigger{
+    display: none;
+}
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    /*border-top: 1px solid $grey-color-light;*/
     padding: $spacing-unit 0;
 }
 
@@ -174,19 +182,40 @@
 .page-heading {
     font-size: 20px;
 }
-
+article,.post-list {
+    background: white none repeat scroll 0 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
 .post-list {
+    list-style: outside none none;
     margin-left: 0;
-    list-style: none;
+
 
     > li {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.25);
         margin-bottom: $spacing-unit;
+        padding-bottom: $spacing-unit;
     }
 }
+
+
+.post-excerpt.post-narrow{
+/*    width:50%;
+    float:left;*/
+}
+.post-image{
+    float: right;
+    margin-left: 3%;
+    width: 44%;
+}
+
 
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    margin-bottom:1em;
+    display: block;
 }
 
 .post-link {
@@ -239,4 +268,19 @@
             font-size: 18px;
         }
     }
+}
+
+body{
+    background: -moz-linear-gradient(top,  #ffffff 0%, #ffffff 25em, #d4d1cd 25em, #d4d1cd 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(25em,#ffffff), color-stop(25em,#d4d1cd), color-stop(100%,#d4d1cd));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#ffffff 25em,#d4d1cd 25em,#d4d1cd 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#ffffff 25em,#d4d1cd 25em,#d4d1cd 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#ffffff 25em,#d4d1cd 25em,#d4d1cd 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#ffffff 25em,#d4d1cd 25em,#d4d1cd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d1cd',GradientType=0 );
+    background-attachment: fixed;
+}
+
+.imprintlink{
+    float: right;
 }
