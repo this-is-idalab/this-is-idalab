@@ -49,6 +49,7 @@ h4 {
     background-image: url('../images/idalab_logo.png');
     background-repeat: no-repeat;
     background-size: 250px 361px;
+    background-position:8px;
     width: 250px;
     height: 361px;
 }
@@ -83,7 +84,7 @@ header.impressum-page .logo {
     border-bottom: 1px solid #000000;
     padding: 20px 0;
     max-width: 400px;
-    margin: 40px auto 20px;
+    margin: 20px auto 20px;
     text-align: center;
 }
 
@@ -125,6 +126,29 @@ header.impressum-page .logo {
 footer.impressum-footer .container {
     border-top: 1px solid #000000;
     padding-top: 40px;
+}
+
+
+nav.topnav{
+/*    background: green !important;      
+     display: -webkit-flex !important;
+    display: -ms-flex !important;
+    display: flex !important;*/
+    /*background: green none repeat scroll 0 0 !important;*/
+    font-size: 125%;
+    margin-top: 1em;
+    text-align: center;
+    width: 100%;
+}
+nav.topnav>a{
+    color: teal;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    width: 10em;
+}
+nav.topnav>a:hover{
+    text-decoration: underline;
 }
 
 
